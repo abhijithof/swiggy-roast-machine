@@ -295,4 +295,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 **Ready to get roasted? Fire up the app and see how much you've spent on food delivery! 🔥💸**
 
-Made with ❤️ and 🔥 for the food delivery addicts of India 🇮🇳
+Made with ❤️ and 🔥 for the food delivery addicts of India 🇮🇳# Environment variables configured - ready for production! 🚀
