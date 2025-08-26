@@ -337,7 +337,7 @@ NO LABELS OR STRUCTURE - just write a flowing, conversational roast that flows n
       this.extractField(content, 'FUN_FACT_1'),
       this.extractField(content, 'FUN_FACT_2'), 
       this.extractField(content, 'FUN_FACT_3')
-    ].filter(fact => fact);
+    ].filter((fact): fact is string => fact !== null && fact !== '');
 
     if (extracted.length >= 3) return extracted;
 
