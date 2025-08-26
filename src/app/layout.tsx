@@ -9,8 +9,6 @@ export const metadata: Metadata = {
   description: 'Get brutally roasted based on your Swiggy spending habits! Connect your account and discover how much money you\'ve burned on food delivery.',
   keywords: 'Swiggy, roast, spending, food delivery, funny, leaderboard, AI roasting',
   authors: [{ name: 'Swiggy Roast Machine' }],
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#f97316',
   openGraph: {
     title: 'Swiggy Roast Machine 🔥',
     description: 'Get brutally roasted based on your Swiggy spending habits!',
@@ -22,6 +20,12 @@ export const metadata: Metadata = {
     title: 'Swiggy Roast Machine 🔥',
     description: 'Get brutally roasted based on your Swiggy spending habits!',
   },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#f97316',
 };
 
 export default function RootLayout({
