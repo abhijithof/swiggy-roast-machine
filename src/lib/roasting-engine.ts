@@ -1,5 +1,5 @@
 import OpenAI from 'openai';
-import { SwiggyAnalytics, RoastAnalysis } from '@/types';
+import { SwiggyAnalytics, RoastAnalysis } from '../types';
 
 export class SwiggyRoastingEngine {
   private openai: OpenAI;

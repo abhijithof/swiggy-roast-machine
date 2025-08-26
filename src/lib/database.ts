@@ -1,4 +1,4 @@
-import { LeaderboardEntry, UserSpendingRecord, SwiggyAnalytics } from '@/types';
+import { LeaderboardEntry, UserSpendingRecord, SwiggyAnalytics } from '../types';
 import fs from 'fs/promises';
 import path from 'path';
 

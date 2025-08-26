@@ -1,4 +1,4 @@
-import { SwiggyAnalytics } from '@/types';
+import { SwiggyAnalytics } from '../types';
 
 export class ReclaimSwiggyClient {
   private appId: string;

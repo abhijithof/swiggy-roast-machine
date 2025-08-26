@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Flame, Crown, TrendingUp } from 'lucide-react';
-import ReclaimVerification from '@/components/ReclaimVerification';
-import RoastDisplay from '@/components/RoastDisplay';
-import Leaderboard from '@/components/Leaderboard';
-import { RoastAnalysis, SwiggyAnalytics, LeaderboardEntry } from '@/types';
+import ReclaimVerification from '../components/ReclaimVerification';
+import RoastDisplay from '../components/RoastDisplay';
+import Leaderboard from '../components/Leaderboard';
+import { RoastAnalysis, SwiggyAnalytics, LeaderboardEntry } from '../types';
 
 type AppStep = 'welcome' | 'verification' | 'loading' | 'roasted' | 'leaderboard';
 

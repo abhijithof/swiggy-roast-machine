@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Flame, TrendingUp, DollarSign, ShoppingCart, Zap, Crown, Target } from 'lucide-react';
-import { RoastAnalysis, SwiggyAnalytics } from '@/types';
+import { RoastAnalysis, SwiggyAnalytics } from '../types';
 
 interface RoastDisplayProps {
   roast: RoastAnalysis;

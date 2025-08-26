@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Crown, Trophy, Medal, Flame, DollarSign, ShoppingCart, TrendingUp } from 'lucide-react';
-import { LeaderboardEntry } from '@/types';
+import { LeaderboardEntry } from '../types';
 
 interface LeaderboardProps {
   leaderboard: LeaderboardEntry[];
