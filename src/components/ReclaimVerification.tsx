@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Shield, CheckCircle, AlertCircle, QrCode, Smartphone, Flame } from 'lucide-react';
 import QRCode from 'react-qr-code';
-import { ReclaimProofRequest } from '@reclaimprotocol/js-sdk';
+// ReclaimProofRequest is imported dynamically when needed
 
 interface ReclaimVerificationProps {
   onVerificationComplete: (verified: boolean, proofs?: unknown) => void;
@@ -70,11 +70,14 @@ export default function ReclaimVerification({ onVerificationComplete }: ReclaimV
           
           let realSwiggyData = null;
           try {
-            if (realProofs && (realProofs as any).claimData && (realProofs as any).claimData.parameters) {
-              realSwiggyData = JSON.parse((realProofs as any).claimData.parameters);
+            if (realProofs && typeof realProofs === 'object' && realProofs !== null && 'claimData' in realProofs && 
+                realProofs.claimData && typeof realProofs.claimData === 'object' && 'parameters' in realProofs.claimData) {
+              realSwiggyData = JSON.parse((realProofs.claimData as { parameters: string }).parameters);
               console.log('🔥 PARSED REAL SWIGGY DATA:', realSwiggyData);
-            } else if (realProofs && Array.isArray(realProofs) && realProofs[0] && (realProofs[0] as any).claimData) {
-              realSwiggyData = JSON.parse((realProofs[0] as any).claimData.parameters);
+            } else if (realProofs && Array.isArray(realProofs) && realProofs[0] && 
+                      typeof realProofs[0] === 'object' && realProofs[0] !== null && 'claimData' in realProofs[0] &&
+                      realProofs[0].claimData && typeof realProofs[0].claimData === 'object' && 'parameters' in realProofs[0].claimData) {
+              realSwiggyData = JSON.parse((realProofs[0].claimData as { parameters: string }).parameters);
               console.log('🔥 PARSED REAL SWIGGY DATA (array format):', realSwiggyData);
             }
           } catch (parseError) {
