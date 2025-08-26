@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user-1756236379051-8aa1wpwrl",
+    "customerName": "Abhijith K",
+    "customerId": "83697199",
+    "email": "alphaboy323@gmail.com",
+    "totalSpend": 1733,
+    "totalOrders": 18,
+    "averageOrderValue": 96.28,
+    "monthlySpend": 144.42,
+    "orderFrequency": 1.5,
+    "cancellationRate": 0,
+    "lastUpdated": "2025-08-26T20:08:20.185Z",
+    "verifiedBy": "reclaim"
+  }
+]
